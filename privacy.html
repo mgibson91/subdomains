@@ -3,46 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jar of Stars - Privacy Policy</title>
+    <title>Privacy Policy — Jar of Stars</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; max-width: 700px; margin: 0 auto; padding: 24px; line-height: 1.6; color: #333; }
-        h1 { font-size: 1.8em; }
-        h2 { font-size: 1.3em; margin-top: 2em; }
-        p { margin: 1em 0; }
-        .updated { color: #888; font-size: 0.9em; }
+        :root {
+            --bg: #F5F0E8;
+            --card: #ffffff;
+            --text: #2C2C2E;
+            --text-secondary: #6B6B6E;
+            --accent: #E63946;
+            --border: rgba(0,0,0,0.06);
+            --shadow: rgba(0,0,0,0.12);
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #1C1C1E;
+                --card: #2C2C2E;
+                --text: #F5F0E8;
+                --text-secondary: #98989D;
+                --border: rgba(255,255,255,0.08);
+                --shadow: rgba(0,0,0,0.4);
+            }
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Rounded', system-ui, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            padding: 0 20px;
+        }
+        .container {
+            max-width: 640px;
+            margin: 0 auto;
+        }
+        header {
+            padding: 48px 0 32px;
+            text-align: center;
+        }
+        header a {
+            text-decoration: none;
+            color: var(--text);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 700;
+            font-size: 0.95em;
+        }
+        header a:hover { color: var(--accent); }
+        .content {
+            background: var(--card);
+            border-radius: 24px;
+            padding: 40px 36px;
+            border: 1px solid var(--border);
+            box-shadow: 0 4px 16px var(--shadow);
+            margin-bottom: 48px;
+        }
+        h1 {
+            font-size: 1.6em;
+            font-weight: 800;
+            letter-spacing: -0.01em;
+            margin-bottom: 4px;
+        }
+        .updated {
+            font-size: 0.85em;
+            color: var(--text-secondary);
+            margin-bottom: 32px;
+            display: block;
+        }
+        h2 {
+            font-size: 1.1em;
+            font-weight: 700;
+            margin: 28px 0 10px;
+            color: var(--accent);
+        }
+        h2:first-of-type { margin-top: 0; }
+        p { line-height: 1.7; color: var(--text-secondary); margin-bottom: 12px; font-size: 0.95em; }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 12px;
+        }
+        ul li {
+            position: relative;
+            padding-left: 20px;
+            line-height: 1.7;
+            color: var(--text-secondary);
+            font-size: 0.95em;
+        }
+        ul li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 10px;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--accent);
+            opacity: 0.5;
+        }
+        a { color: var(--accent); }
+        footer {
+            text-align: center;
+            padding: 24px 0 48px;
+        }
+        footer a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.85em;
+            margin: 0 12px;
+        }
+        footer a:hover { color: var(--accent); }
+        .dot { color: var(--text-secondary); opacity: 0.4; font-size: 0.75em; }
+        @media (max-width: 480px) {
+            .content { padding: 28px 24px; border-radius: 20px; }
+        }
     </style>
 </head>
 <body>
-    <h1>Jar of Stars - Privacy Policy</h1>
-    <p class="updated">Last updated: February 16, 2026</p>
+    <div class="container">
+        <header>
+            <a href="/">&#11088; Jar of Stars</a>
+        </header>
 
-    <h2>Overview</h2>
-    <p>Jar of Stars is a family reward tracking app. Your privacy is important to us. This policy explains what data the app handles and how.</p>
+        <div class="content">
+            <h1>Privacy Policy</h1>
+            <span class="updated">Last updated: February 16, 2026</span>
 
-    <h2>Data Storage</h2>
-    <p>All data you enter (children's names, stars, rewards) is stored in your personal iCloud account using Apple's CloudKit service. This data is synced between your own devices and any family members you explicitly invite to share.</p>
-    <p>We do not operate any servers. We do not have access to your data. Your data lives entirely in your iCloud account, controlled by Apple's privacy and security infrastructure.</p>
+            <h2>Overview</h2>
+            <p>Jar of Stars is a family reward tracking app. Your privacy is important to us. This policy explains what data the app handles and how.</p>
 
-    <h2>Data Collection</h2>
-    <p>Jar of Stars does not collect, transmit, or share any personal data with us or any third party. Specifically:</p>
-    <ul>
-        <li>No analytics or tracking</li>
-        <li>No advertising</li>
-        <li>No email addresses collected</li>
-        <li>No usage data sent to external services</li>
-        <li>No third-party SDKs</li>
-    </ul>
+            <h2>Data Storage</h2>
+            <p>All data you enter (children's names, stars, rewards) is stored in your personal iCloud account using Apple's CloudKit service. This data is synced between your own devices and any family members you explicitly invite to share.</p>
+            <p>We do not operate any servers. We do not have access to your data. Your data lives entirely in your iCloud account, controlled by Apple's privacy and security infrastructure.</p>
 
-    <h2>Children's Privacy</h2>
-    <p>The app may store children's first names and emoji avatars as entered by a parent or guardian. This information is stored only in your personal iCloud account and is never transmitted to us or any third party.</p>
+            <h2>Data Collection</h2>
+            <p>Jar of Stars does not collect, transmit, or share any personal data with us or any third party. Specifically:</p>
+            <ul>
+                <li>No analytics or tracking</li>
+                <li>No advertising</li>
+                <li>No email addresses collected</li>
+                <li>No usage data sent to external services</li>
+                <li>No third-party SDKs</li>
+            </ul>
 
-    <h2>In-App Purchases</h2>
-    <p>Purchases are processed entirely by Apple through the App Store. We do not receive or store any payment information.</p>
+            <h2>Children's Privacy</h2>
+            <p>The app may store children's first names and emoji avatars as entered by a parent or guardian. This information is stored only in your personal iCloud account and is never transmitted to us or any third party.</p>
 
-    <h2>Data Deletion</h2>
-    <p>You can delete all app data at any time through the app's Settings screen or by deleting the app. Since all data is stored in your iCloud account, you can also manage it through iCloud settings.</p>
+            <h2>In-App Purchases</h2>
+            <p>Purchases are processed entirely by Apple through the App Store. We do not receive or store any payment information.</p>
 
-    <h2>Contact</h2>
-    <p>If you have any questions about this privacy policy, contact us at <a href="mailto:jarofstars@unboundedsoftware.com">jarofstars@unboundedsoftware.com</a>.</p>
+            <h2>Data Deletion</h2>
+            <p>You can delete all app data at any time through the app's Settings screen or by deleting the app. Since all data is stored in your iCloud account, you can also manage it through iCloud settings.</p>
+
+            <h2>Contact</h2>
+            <p>If you have any questions about this privacy policy, contact us at <a href="mailto:jarofstars@unboundedsoftware.com">jarofstars@unboundedsoftware.com</a>.</p>
+        </div>
+
+        <footer>
+            <a href="/">Home</a>
+            <span class="dot">&middot;</span>
+            <a href="mailto:jarofstars@unboundedsoftware.com">Support</a>
+        </footer>
+    </div>
 </body>
 </html>
